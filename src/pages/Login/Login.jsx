@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 function Login() {
   return (
@@ -7,6 +8,9 @@ function Login() {
       <form action="">
         <input type="text" className='border p-3 border-black' />
       </form>
+      <h2>Hali ruyhatdan otmaganmisiz? 
+        <NavLink className={"text-blue-800 font-bold"} to="/register">Register</NavLink>
+      </h2>
     </div>
   )
 }
