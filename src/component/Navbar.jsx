@@ -19,6 +19,9 @@ function Navbar({ setDarkMode, darkMode }) {
         <li>
           <NavLink to={"contact"}>Contact</NavLink>
         </li>
+        <li>
+          <NavLink to={"login"}>Login</NavLink>
+        </li>
       </ul>
       <button className="bg-green-700 p-3 hover:bg-slate-600 duration-500 
        hover:text-red-700 hidden tablet:inline-block 
