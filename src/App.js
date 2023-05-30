@@ -8,6 +8,7 @@ import { Routes, Route } from "react-router-dom"
 import Faq from './pages/Faq';
 import Help from './pages/Help';
 import Clients from './pages/Clients';
+import Login from './pages/Login/Login';
 
 function App() {
   const [darkMode, setDarkMode] = React.useState(JSON.parse(localStorage.getItem("mode")) || false)
@@ -33,6 +34,7 @@ function App() {
       <Navbar setDarkMode={setDarkMode} darkMode={darkMode} />
       <Routes>
         <Route path='/' element={<Main />} />
+        <Route path='/login' element={<Login />} />
         {/* protectedRoute */}
         <Route path="contact" element={<Contact />}>
           <Route path='faq' element={<Faq />} />
